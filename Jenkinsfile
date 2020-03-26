@@ -10,7 +10,7 @@ git ''
 stage('QG')
 {
 steps{
-sh ''
+sh ''mvn -Dmaven.test.failure.ignore clean verify'
 }
 }
 }
